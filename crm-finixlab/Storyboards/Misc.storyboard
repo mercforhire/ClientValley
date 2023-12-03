@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Country/Region-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CountryPickerViewController" id="Y6W-OH-hqX" customClass="CountryPickerViewController" customModule="crm_finixlab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGR-s4-Y4a" customClass="ThemeView" customModule="crm_finixlab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="320" height="67"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ij-k5-Egx" customClass="ThemeBorderView" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="sLh-Xj-FBR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="COUNTRY OR REGION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6l-rS-ePQ" customClass="ThemeImportantLabel" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="15" width="153.5" height="14"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a country or region." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEM-85-Ywj" customClass="ThemeSmallLabel" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="31" width="207.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cn0-6T-Ui3" customClass="ThemeBorderView" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="bua-SE-uec"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="DvO-c8-OtE"/>
+                                    <constraint firstItem="J6l-rS-ePQ" firstAttribute="leading" secondItem="lGR-s4-Y4a" secondAttribute="leading" constant="24" id="JtK-mk-voJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ij-k5-Egx" secondAttribute="trailing" id="S6y-Ji-s5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cn0-6T-Ui3" secondAttribute="trailing" id="X4n-JK-yJ5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cn0-6T-Ui3" secondAttribute="bottom" id="bFo-Ve-GRd"/>
+                                    <constraint firstItem="iEM-85-Ywj" firstAttribute="top" secondItem="J6l-rS-ePQ" secondAttribute="bottom" constant="2" id="iI7-Sw-RnZ"/>
+                                    <constraint firstItem="iEM-85-Ywj" firstAttribute="leading" secondItem="lGR-s4-Y4a" secondAttribute="leading" constant="24" id="kb4-NC-Qsf"/>
+                                    <constraint firstItem="J6l-rS-ePQ" firstAttribute="top" secondItem="7ij-k5-Egx" secondAttribute="bottom" constant="14" id="ksR-KK-UzU"/>
+                                    <constraint firstItem="7ij-k5-Egx" firstAttribute="top" secondItem="lGR-s4-Y4a" secondAttribute="top" id="mYE-yX-x3p"/>
+                                    <constraint firstItem="Cn0-6T-Ui3" firstAttribute="top" secondItem="iEM-85-Ywj" secondAttribute="bottom" constant="14" id="qxs-My-Qyt"/>
+                                    <constraint firstItem="7ij-k5-Egx" firstAttribute="leading" secondItem="lGR-s4-Y4a" secondAttribute="leading" id="sk9-UJ-8f6"/>
+                                    <constraint firstItem="Cn0-6T-Ui3" firstAttribute="leading" secondItem="lGR-s4-Y4a" secondAttribute="leading" id="w13-yW-i7b"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KtC-aF-sTO">
+                                <rect key="frame" x="0.0" y="111" width="320" height="457"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryPickerCell" id="3aa-7m-KKU" customClass="CountryPickerCell" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3aa-7m-KKU" id="jjQ-fg-Oo9">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jP6-MO-H0G">
+                                                    <rect key="frame" x="0.0" y="0.0" width="6" height="44"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="6" id="sQe-jG-vfn"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxg-FK-FS1">
+                                                    <rect key="frame" x="16" y="13" width="38" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qxg-FK-FS1" firstAttribute="centerY" secondItem="jjQ-fg-Oo9" secondAttribute="centerY" id="H96-64-GIq"/>
+                                                <constraint firstItem="Qxg-FK-FS1" firstAttribute="leading" secondItem="jjQ-fg-Oo9" secondAttribute="leading" constant="16" id="QQq-iC-Or2"/>
+                                                <constraint firstItem="jP6-MO-H0G" firstAttribute="leading" secondItem="jjQ-fg-Oo9" secondAttribute="leading" id="RiU-lT-0F0"/>
+                                                <constraint firstAttribute="bottom" secondItem="jP6-MO-H0G" secondAttribute="bottom" id="XL7-Wz-CUD"/>
+                                                <constraint firstItem="jP6-MO-H0G" firstAttribute="top" secondItem="jjQ-fg-Oo9" secondAttribute="top" id="na9-4m-eSN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="highlightBar" destination="jP6-MO-H0G" id="aRZ-Ux-adZ"/>
+                                            <outlet property="selectionLabel" destination="Qxg-FK-FS1" id="cq1-ua-bnO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="wmv-bU-1RZ"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="eGp-4i-Y0S"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KtC-aF-sTO" firstAttribute="top" secondItem="lGR-s4-Y4a" secondAttribute="bottom" id="3pU-O3-COp"/>
+                            <constraint firstItem="KtC-aF-sTO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="88T-v3-wfM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lGR-s4-Y4a" secondAttribute="trailing" id="FFX-f1-1aJ"/>
+                            <constraint firstItem="lGR-s4-Y4a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NBJ-kg-j5d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KtC-aF-sTO" secondAttribute="trailing" id="aox-Fh-Kib"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KtC-aF-sTO" secondAttribute="bottom" id="kDj-Nd-hLr"/>
+                            <constraint firstItem="lGR-s4-Y4a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wcc-0S-1bb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Country/Region" id="UoZ-64-2zh">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="6kz-5v-qSD">
+                            <connections>
+                                <action selector="dismissPress:" destination="Y6W-OH-hqX" id="nJP-cd-syW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="6kz-5v-qSD" id="6NV-UZ-Yi8"/>
+                        <outlet property="tableView" destination="KtC-aF-sTO" id="cCU-Ub-6Rl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K0k-lF-PsZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZAS-Sk-cxd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jH3-PM-EiW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="tkB-Jk-jfX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvf-4X-GYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+        <!--Add hashtag-->
+        <scene sceneID="M8A-r1-KDB">
+            <objects>
+                <viewController storyboardIdentifier="HashtagAddViewController" id="eJa-1s-DjW" customClass="HashtagAddViewController" customModule="crm_finixlab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2q4-7d-Z3x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKb-NX-Mhm" customClass="ThemeView" customModule="crm_finixlab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mo-qG-c9d" customClass="ThemeBorderView" customModule="crm_finixlab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="cNW-bt-FCk"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Nsz-8x-HBZ">
+                                        <rect key="frame" x="25" y="28" width="270" height="351"/>
+                                        <subviews>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-Np-gm6">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="748" text="NEW HASHTAG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-CZ-5Zu" customClass="ThemeTextFieldLabel" customModule="crm_finixlab" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="p6z-bZ-TPU"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="SBo-CZ-5Zu" secondAttribute="bottom" id="RfV-Kc-TA0"/>
+                                                    <constraint firstItem="SBo-CZ-5Zu" firstAttribute="leading" secondItem="sLP-Np-gm6" secondAttribute="leading" id="VMv-kx-jHB"/>
+                                                    <constraint firstItem="SBo-CZ-5Zu" firstAttribute="top" secondItem="sLP-Np-gm6" secondAttribute="top" id="bN2-Ba-u7U"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-1G-qlO">
+                                                <rect key="frame" x="0.0" y="59" width="270" height="47"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUP-bq-Rj2" customClass="ThemeTextField" customModule="crm_finixlab" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="47" placeholder="YES" id="c0Q-xd-Pae"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="eJa-1s-DjW" id="6DD-T8-ohc"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="QUP-bq-Rj2" firstAttribute="top" secondItem="tbA-1G-qlO" secondAttribute="top" id="Zgf-Jp-S1h"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QUP-bq-Rj2" secondAttribute="bottom" id="afE-qQ-aZw"/>
+                                                    <constraint firstItem="QUP-bq-Rj2" firstAttribute="leading" secondItem="tbA-1G-qlO" secondAttribute="leading" id="glf-0Q-6fv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QUP-bq-Rj2" secondAttribute="trailing" id="hEQ-3Z-aNd"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-JQ-QnD">
+                                                <rect key="frame" x="0.0" y="115" width="270" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="4MY-8t-jVe"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-Fz-ahp">
+                                                <rect key="frame" x="0.0" y="142" width="270" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="HISTORY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45N-Sj-zEJ" customClass="ThemeTextFieldLabel" customModule="crm_finixlab" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="61" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0Kr-Os-rxf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="45N-Sj-zEJ" firstAttribute="leading" secondItem="Hga-Fz-ahp" secondAttribute="leading" id="KgL-wB-o7O"/>
+                                                    <constraint firstItem="45N-Sj-zEJ" firstAttribute="top" secondItem="Hga-Fz-ahp" secondAttribute="top" id="KwS-NL-CVn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="45N-Sj-zEJ" secondAttribute="bottom" id="yky-CG-acZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-Hn-aK2">
+                                                <rect key="frame" x="0.0" y="201" width="270" height="150"/>
+                                                <subviews>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GWz-Eb-Jza">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="150"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="999" constant="150" id="1Xp-J1-y6Q"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b62-Xa-HnI">
+                                                            <size key="itemSize" width="171" height="74"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="eJa-1s-DjW" id="OJw-Zt-OHs"/>
+                                                            <outlet property="delegate" destination="eJa-1s-DjW" id="a2k-LO-bi4"/>
+                                                        </connections>
+                                                    </collectionView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="GWz-Eb-Jza" firstAttribute="top" secondItem="4tK-Hn-aK2" secondAttribute="top" id="CZx-kq-tAD"/>
+                                                    <constraint firstItem="GWz-Eb-Jza" firstAttribute="leading" secondItem="4tK-Hn-aK2" secondAttribute="leading" id="HHD-jt-NWT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GWz-Eb-Jza" secondAttribute="bottom" id="QTT-lq-aCk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GWz-Eb-Jza" secondAttribute="trailing" id="yfN-i2-478"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nsz-8x-HBZ" firstAttribute="top" secondItem="NKb-NX-Mhm" secondAttribute="top" constant="28" id="LMI-A2-rdA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nsz-8x-HBZ" secondAttribute="trailing" constant="25" id="LxS-Yi-syX"/>
+                                    <constraint firstAttribute="trailing" secondItem="5mo-qG-c9d" secondAttribute="trailing" id="OIn-8B-9rv"/>
+                                    <constraint firstItem="Nsz-8x-HBZ" firstAttribute="leading" secondItem="NKb-NX-Mhm" secondAttribute="leading" constant="25" id="Ra7-8U-ndb"/>
+                                    <constraint firstItem="5mo-qG-c9d" firstAttribute="leading" secondItem="NKb-NX-Mhm" secondAttribute="leading" id="dmy-9M-fox"/>
+                                    <constraint firstItem="5mo-qG-c9d" firstAttribute="top" secondItem="NKb-NX-Mhm" secondAttribute="top" id="tLw-My-imC"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nsz-8x-HBZ" secondAttribute="bottom" constant="48" id="u5p-vD-gSf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t4U-64-rsy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NKb-NX-Mhm" firstAttribute="leading" secondItem="t4U-64-rsy" secondAttribute="leading" id="2Ur-mg-YQE"/>
+                            <constraint firstItem="NKb-NX-Mhm" firstAttribute="top" secondItem="t4U-64-rsy" secondAttribute="top" id="CwJ-ZT-xhI"/>
+                            <constraint firstItem="t4U-64-rsy" firstAttribute="bottom" secondItem="NKb-NX-Mhm" secondAttribute="bottom" id="UXZ-Jp-2Jw"/>
+                            <constraint firstItem="t4U-64-rsy" firstAttribute="trailing" secondItem="NKb-NX-Mhm" secondAttribute="trailing" id="dKs-By-LfI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add hashtag" id="HFn-bO-rno">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="jT0-JG-gqs">
+                            <connections>
+                                <action selector="backPressed:" destination="eJa-1s-DjW" id="AQW-da-gh2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="aaF-q6-D9r">
+                            <connections>
+                                <action selector="addPressed:" destination="eJa-1s-DjW" id="D9s-Rf-w3L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="aaF-q6-D9r" id="4Un-yA-MB4"/>
+                        <outlet property="backButton" destination="jT0-JG-gqs" id="8N1-dc-iQw"/>
+                        <outlet property="collectionViewHeight" destination="1Xp-J1-y6Q" id="ayv-dB-6Mw"/>
+                        <outlet property="contentView" destination="2q4-7d-Z3x" id="yD5-0Z-qH8"/>
+                        <outlet property="hashtagCollectionView" destination="GWz-Eb-Jza" id="e6p-zn-MJG"/>
+                        <outlet property="newtagField" destination="QUP-bq-Rj2" id="QiF-10-0AI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK6-sw-rVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

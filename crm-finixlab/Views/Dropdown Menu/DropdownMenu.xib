@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropdownMenu" customModule="crm_finixlab" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="4jt-JA-unj"/>
+                <outlet property="dimBackground" destination="YGH-eF-QPO" id="rHk-Wg-aoE"/>
+                <outlet property="menuHeight" destination="1qY-0r-7h1" id="SVG-bp-HKd"/>
+                <outlet property="tableView" destination="qzX-qq-pYA" id="O9Y-4U-17Y"/>
+                <outlet property="topMargin" destination="BeI-Eq-Quy" id="QRk-eF-OWl"/>
+                <outlet property="topTriangle" destination="v2W-Yq-F4n" id="y5P-X8-3YQ"/>
+                <outlet property="topTrianglePositionX" destination="cSd-SI-c8G" id="DS8-89-QMg"/>
+                <outlet property="tutorialContainerView" destination="cY2-ZX-Twy" id="tO3-kg-J3V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGH-eF-QPO" userLabel="Clickable Dim Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="0.54591181509999998" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGq-2s-xwt" userLabel="Dismiss button">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="nhv-AH-6W0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY2-ZX-Twy" userLabel="Tutorial Container">
+                    <rect key="frame" x="25" y="200" width="325" height="190"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qzX-qq-pYA">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="190"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="1qY-0r-7h1"/>
+                        <constraint firstItem="qzX-qq-pYA" firstAttribute="leading" secondItem="cY2-ZX-Twy" secondAttribute="leading" id="Emg-Vd-dXz"/>
+                        <constraint firstAttribute="bottom" secondItem="qzX-qq-pYA" secondAttribute="bottom" id="fo3-kh-AqO"/>
+                        <constraint firstAttribute="trailing" secondItem="qzX-qq-pYA" secondAttribute="trailing" id="ft3-rd-A17"/>
+                        <constraint firstItem="qzX-qq-pYA" firstAttribute="top" secondItem="cY2-ZX-Twy" secondAttribute="top" id="zQt-eN-YVj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-Yq-F4n" customClass="TriangleView" customModule="crm_finixlab" customModuleProvider="target">
+                    <rect key="frame" x="25" y="188" width="20" height="12"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="WK9-Tj-Kgu"/>
+                        <constraint firstAttribute="height" constant="12" id="YIW-d3-66c"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YGH-eF-QPO" secondAttribute="bottom" id="1Du-Ww-V4h"/>
+                <constraint firstItem="YGH-eF-QPO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4YH-aL-ja9"/>
+                <constraint firstItem="cY2-ZX-Twy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="5Xg-Y8-JFm"/>
+                <constraint firstAttribute="trailing" secondItem="YGH-eF-QPO" secondAttribute="trailing" id="7VQ-H7-FJh"/>
+                <constraint firstItem="cY2-ZX-Twy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="BeI-Eq-Quy"/>
+                <constraint firstItem="cY2-ZX-Twy" firstAttribute="top" secondItem="v2W-Yq-F4n" secondAttribute="bottom" id="bJ6-tM-wGA"/>
+                <constraint firstItem="v2W-Yq-F4n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="cSd-SI-c8G"/>
+                <constraint firstAttribute="trailing" secondItem="cY2-ZX-Twy" secondAttribute="trailing" constant="25" id="e35-Fj-RHi"/>
+                <constraint firstItem="qGq-2s-xwt" firstAttribute="top" secondItem="YGH-eF-QPO" secondAttribute="top" id="lbL-rY-Pln"/>
+                <constraint firstItem="YGH-eF-QPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pN1-XS-JuS"/>
+                <constraint firstItem="qGq-2s-xwt" firstAttribute="trailing" secondItem="YGH-eF-QPO" secondAttribute="trailing" id="zFd-Qr-1kz"/>
+                <constraint firstItem="qGq-2s-xwt" firstAttribute="leading" secondItem="YGH-eF-QPO" secondAttribute="leading" id="zHf-Df-RxJ"/>
+                <constraint firstItem="qGq-2s-xwt" firstAttribute="bottom" secondItem="YGH-eF-QPO" secondAttribute="bottom" id="zvk-Fv-EhL"/>
+            </constraints>
+            <point key="canvasLocation" x="13.6" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

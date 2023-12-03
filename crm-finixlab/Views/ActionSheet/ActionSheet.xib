@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheet" customModule="crm_finixlab" customModuleProvider="target">
+            <connections>
+                <outlet property="actionSheetContainerTop" destination="bNH-5W-EZJ" id="URl-if-N7q"/>
+                <outlet property="actionSheetContainerView" destination="g08-L7-ojv" id="tMo-zO-ejc"/>
+                <outlet property="actionSheetContainerViewHeight" destination="Z1k-7i-344" id="ilh-Ut-VJz"/>
+                <outlet property="actionSheetView" destination="mRj-40-XgY" id="e92-fB-iLv"/>
+                <outlet property="clickableDimBackGround" destination="Gk8-Ou-Qwi" id="YEF-JU-BTR"/>
+                <outlet property="footerView" destination="0H9-DR-80G" id="npc-83-9Kh"/>
+                <outlet property="parentContainerView" destination="m27-xT-ZcA" id="eFh-tz-P2p"/>
+                <outlet property="topBarView" destination="AgK-Q0-qui" id="1ji-CU-zFM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m27-xT-ZcA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk8-Ou-Qwi" userLabel="Clickable Dim Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="0.54591181506849318" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-40-XgY" userLabel="Action Sheet Container" customClass="RoundedCornersView" customModule="crm_finixlab" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="300" width="375" height="234"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g08-L7-ojv" userLabel="Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.50329088180000003" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="Z1k-7i-344"/>
+                            </constraints>
+                        </view>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgK-Q0-qui" userLabel="Top Bar">
+                            <rect key="frame" x="155" y="10" width="65" height="4"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="NM7-qJ-Xfo"/>
+                                <constraint firstAttribute="width" constant="65" id="mbm-Fu-tnO"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0H9-DR-80G" userLabel="Footer View">
+                            <rect key="frame" x="0.0" y="200" width="375" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="bcz-eP-NcS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0H9-DR-80G" secondAttribute="bottom" id="1dC-5h-X9y"/>
+                        <constraint firstItem="AgK-Q0-qui" firstAttribute="centerX" secondItem="mRj-40-XgY" secondAttribute="centerX" id="MsW-Di-1Jj"/>
+                        <constraint firstItem="g08-L7-ojv" firstAttribute="leading" secondItem="mRj-40-XgY" secondAttribute="leading" id="Vbz-bp-zcq"/>
+                        <constraint firstItem="g08-L7-ojv" firstAttribute="top" secondItem="mRj-40-XgY" secondAttribute="top" id="Wz7-oP-VEa"/>
+                        <constraint firstAttribute="trailing" secondItem="g08-L7-ojv" secondAttribute="trailing" id="nrv-q7-zzn"/>
+                        <constraint firstItem="0H9-DR-80G" firstAttribute="top" secondItem="g08-L7-ojv" secondAttribute="bottom" id="tHM-Z8-kVk"/>
+                        <constraint firstItem="0H9-DR-80G" firstAttribute="leading" secondItem="mRj-40-XgY" secondAttribute="leading" id="tno-iK-Pf9"/>
+                        <constraint firstItem="AgK-Q0-qui" firstAttribute="top" secondItem="mRj-40-XgY" secondAttribute="top" constant="10" id="tts-BT-s2X"/>
+                        <constraint firstAttribute="trailing" secondItem="0H9-DR-80G" secondAttribute="trailing" id="wvg-h3-jbw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mRj-40-XgY" secondAttribute="trailing" id="5gk-iD-cxG"/>
+                <constraint firstAttribute="bottom" secondItem="Gk8-Ou-Qwi" secondAttribute="bottom" id="B4N-EA-nKL"/>
+                <constraint firstItem="mRj-40-XgY" firstAttribute="leading" secondItem="m27-xT-ZcA" secondAttribute="leading" id="Lz0-PY-KZi"/>
+                <constraint firstItem="Gk8-Ou-Qwi" firstAttribute="top" secondItem="m27-xT-ZcA" secondAttribute="top" id="TLK-UB-egP"/>
+                <constraint firstItem="mRj-40-XgY" firstAttribute="top" secondItem="Gk8-Ou-Qwi" secondAttribute="bottom" id="bNH-5W-EZJ"/>
+                <constraint firstAttribute="trailing" secondItem="Gk8-Ou-Qwi" secondAttribute="trailing" id="kDF-lh-wfe"/>
+                <constraint firstItem="Gk8-Ou-Qwi" firstAttribute="leading" secondItem="m27-xT-ZcA" secondAttribute="leading" id="zgn-Cg-GHn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-346.5" y="61.5"/>
+        </view>
+    </objects>
+</document>

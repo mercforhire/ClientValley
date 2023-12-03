@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>viewColor</key>
+	<string>rgb 42 42 42</string>
+	<key>KeyboardToolbar</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>rgb 42 42 42</string>
+		<key>buttonColor</key>
+		<string>rgb 255 255 255</string>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+	</dict>
+	<key>NavBar</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>rgb 0 0 0</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>18</integer>
+			<key>font</key>
+			<string>Poppins</string>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>BarButton</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+	</dict>
+	<key>TabBar</key>
+	<dict>
+		<key>selectedColor</key>
+		<string>rgb 255 255 255</string>
+		<key>selectedTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>unSelectedColor</key>
+		<string>rgb 156 156 156</string>
+		<key>unSelectedTextColor</key>
+		<string>rgb 156 156 156</string>
+	</dict>
+	<key>TextFieldLabel</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>textColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>ImportantLabel</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>14</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>textColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>PrimaryButton</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>18</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>SecondaryButton</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 48 48 48</string>
+		<key>borderColor</key>
+		<string>rgb 75 75 75</string>
+		<key>textColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>DeleteButton</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>18</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 48 48 48</string>
+		<key>textColor</key>
+		<string>rgb 239 32 32</string>
+		<key>borderColor</key>
+		<string>rgb 129 129 129</string>
+	</dict>
+	<key>LabelButton</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>14</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>TextView</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 48 48 48</string>
+		<key>borderColor</key>
+		<string>rgb 75 75 75</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>TextField</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>borderColor</key>
+		<string>rgb 75 75 75</string>
+		<key>backgroundColor</key>
+		<string>rgb 48 48 48</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>errorTextColor</key>
+		<string>rgb 228 41 41</string>
+	</dict>
+	<key>SegmentedControl</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>16</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>selectedSegmentTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>selectedSegmentColor</key>
+		<string>rgb 28 102 255</string>
+		<key>unSelectedSegmentTextColor</key>
+		<string>rgb 228 228 228</string>
+		<key>unSelectedSegmentColor</key>
+		<string>rgb 81 81 81</string>
+	</dict>
+	<key>DropdownMenu</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>selectedTextColor</key>
+		<string>rgb 166 188 247</string>
+		<key>selectedSegmentColor</key>
+		<string>rgb 32 85 239</string>
+		<key>unSelectedTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>backgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>arrowColor</key>
+		<string>rgb 216 216 216</string>
+	</dict>
+	<key>CountryPicker</key>
+	<dict>
+		<key>Title</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>16</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>CountryRow</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>SectionText</key>
+		<dict>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>10</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>DatePicker</key>
+	<dict>
+		<key>DateRow</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>16</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 42 42 42</string>
+	</dict>
+	<key>Avatar</key>
+	<dict>
+		<key>Small</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>17</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Medium</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>22</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Large</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>32</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 91 91 91</string>
+	</dict>
+	<key>Hashtag</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>rightButtonColor</key>
+		<string>rgb 166 188 247</string>
+		<key>rightButtonTint</key>
+		<string>rgb 178 178 178</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>borderColor</key>
+		<string>rgb 75 75 75</string>
+	</dict>
+	<key>CheckboxSection</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>checkedTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>checkedBackgroundColor</key>
+		<string>rgb 32 85 239</string>
+		<key>checkedCheckboxColor</key>
+		<string>rgb 255 255 255</string>
+		<key>uncheckedTextColor</key>
+		<string>rgb 178 178 178</string>
+		<key>uncheckedBackgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>uncheckedCheckboxColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>CustomDialog</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>Title</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>16</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Body</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Secondary</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>14</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>backgroundColor</key>
+			<string>rgb 42 42 42</string>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Primary</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>14</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>backgroundColor</key>
+			<string>rgb 32 85 239</string>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+	</dict>
+	<key>ContactMethodIcon</key>
+	<dict>
+		<key>Available</key>
+		<dict>
+			<key>iconTintColor</key>
+			<string>rgb 255 255 255</string>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>regular</string>
+				<key>size</key>
+				<integer>12</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>backgroundColor</key>
+			<string>rgb 28 102 255</string>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+			<key>borderColor</key>
+			<string></string>
+		</dict>
+		<key>Unavailable</key>
+		<dict>
+			<key>iconTintColor</key>
+			<string>rgb 178 178 178</string>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>regular</string>
+				<key>size</key>
+				<integer>12</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>backgroundColor</key>
+			<string>rgb 75 75 75</string>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+			<key>borderColor</key>
+			<string>rgb 75 75 75</string>
+		</dict>
+	</dict>
+	<key>SearchResult</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>gb 42 42 42</string>
+		<key>iconTintColor</key>
+		<string>rgb 216 216 216</string>
+		<key>ResultsLabel</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>14</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+		</dict>
+		<key>NameLabel</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>FieldTitle</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>12</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+		</dict>
+		<key>Field</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>13</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+	</dict>
+	<key>LabelSwitchCell</key>
+	<dict>
+		<key>Label</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>switchTintColor</key>
+		<string>rgb 28 102 255</string>
+	</dict>
+	<key>SearchBar</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>borderColor</key>
+		<string>rgb 75 75 75</string>
+		<key>backgroundColor</key>
+		<string>rgb 48 48 48</string>
+		<key>textColor</key>
+		<string>rgb 178 178 178</string>
+		<key>iconTintColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>FollowUpTable</key>
+	<dict>
+		<key>SectionHeader</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>14</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+			<key>backgroundColor</key>
+			<string>rgb 75 75 75</string>
+		</dict>
+	</dict>
+	<key>EmailNameTag</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>10</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>MailRecipientCell</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>semiBold</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>buttonBackgroundColor</key>
+		<string>rgb 129 129 129</string>
+		<key>buttonTintColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>TemplateCell</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>buttonTintColor</key>
+		<string>rgb 178 178 178</string>
+		<key>iconTintColor</key>
+		<string>rgb 255 255 255</string>
+		<key>iconBackgroundColor</key>
+		<string>rgb 28 102 255</string>
+	</dict>
+	<key>AccountCell</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>iconTintColor</key>
+		<string>rgb 255 255 255</string>
+		<key>iconBackgroundColor</key>
+		<string>rgb 28 102 255</string>
+	</dict>
+	<key>AppoScreen</key>
+	<dict>
+		<key>AppListCell</key>
+		<dict>
+			<key>timeLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>16</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>nameLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>semiBold</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>appoNameLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>12</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>backgroundColor</key>
+			<string>rgb 75 75 75</string>
+			<key>textColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Section</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>14</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>textColor</key>
+			<string>rgb 178 178 178</string>
+		</dict>
+		<key>AppMonthListCell</key>
+		<dict>
+			<key>dateLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>16</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>labelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>dateLabelTextColor</key>
+			<string>rgb 178 178 178</string>
+			<key>labelTextColor</key>
+			<string>rgb 255 255 255</string>
+		</dict>
+		<key>Calender</key>
+		<dict>
+			<key>backgroundColor</key>
+			<string>rgb 75 75 75</string>
+			<key>monthLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>monthLabelTextColor</key>
+			<string>rgb 255 255 255</string>
+			<key>weekdayLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>weekdayLabelTextColor</key>
+			<string>rgb 255 255 255</string>
+			<key>dayLabelFont</key>
+			<dict>
+				<key>weight</key>
+				<string>medium</string>
+				<key>size</key>
+				<integer>15</integer>
+				<key>font</key>
+				<string>Poppins</string>
+			</dict>
+			<key>dayLabelSelectedTextColor</key>
+			<string>rgb 255 255 255</string>
+			<key>dayLabelSelectedTintColor</key>
+			<string>rgb 28 102 255</string>
+			<key>dayLabelUnselectedTextColor</key>
+			<string>rgb 255 255 255</string>
+			<key>dayLabelPreviousMonthTextColor</key>
+			<string>rgb 178 178 178</string>
+		</dict>
+	</dict>
+	<key>AppoDetailsScreen</key>
+	<dict>
+		<key>profileContainerBorderColor</key>
+		<string>rgb 48 48 48</string>
+		<key>profileLabelsTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>profileButtonColor</key>
+		<string>rgb 28 102 255</string>
+		<key>infoIconColor</key>
+		<string>rgb 28 102 255</string>
+	</dict>
+	<key>TeamActionSheet</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>dragBarColor</key>
+		<string>rgb 129 129 129</string>
+		<key>backgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>selectedColor</key>
+		<string>rgb 255 255 255</string>
+		<key>unselectedColor</key>
+		<string>rgb 178 178 178</string>
+		<key>unselectedIconTintColor</key>
+		<string>rgb 178 178 178</string>
+		<key>selectedIconTintColor</key>
+		<string>rgb 28 102 255</string>
+		<key>dividerColor</key>
+		<string>rgb 129 129 129</string>
+	</dict>
+	<key>Toast</key>
+	<dict>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>12</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>backgroundColor</key>
+		<string>rgba 28 102 255</string>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>AccountScreen</key>
+	<dict>
+		<key>teamButtonBackgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>teamButtonForegroundColor</key>
+		<string>rgb 255 255 255</string>
+		<key>sectionHeaderColor</key>
+		<string>rgb 255 255 255</string>
+		<key>disabledItemColor</key>
+		<string>rgb 129 129 129</string>
+	</dict>
+	<key>MemberScreen</key>
+	<dict>
+		<key>memberNameFont</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>16</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>roleFont</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>12</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>titleFont</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>14</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>subtitleFont</key>
+		<dict>
+			<key>weight</key>
+			<string>medium</string>
+			<key>size</key>
+			<integer>15</integer>
+			<key>font</key>
+			<string>Poppins</string>
+		</dict>
+		<key>cardBackgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>foregroundColor</key>
+		<string>rgb 255 255 255</string>
+	</dict>
+	<key>InsightsScreen</key>
+	<dict>
+		<key>buttonBackgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>buttonForegroundColor</key>
+		<string>rgb 255 255 255</string>
+		<key>appoDotColor</key>
+		<string>rgb 28 102 255</string>
+		<key>followUpDotColor</key>
+		<string>rgb 139 169 255</string>
+		<key>clientDotColor</key>
+		<string>rgb 151 201 255</string>
+		<key>teamCellBackgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>teamCellForegroundColor</key>
+		<string>rgb 255 255 255</string>
+		<key>emailDotColor</key>
+		<string>rgb 28 102 255</string>
+		<key>phoneDotColor</key>
+		<string>rgb 139 169 255</string>
+		<key>messageDotColor</key>
+		<string>rgb 151 201 255</string>
+		<key>mailDotColor</key>
+		<string>rgb 224 253 255</string>
+	</dict>
+	<key>PerformanceScreen</key>
+	<dict>
+		<key>bigCircleBorderColor</key>
+		<string>rgb 28 102 255</string>
+		<key>bigCircleBackgroundColor</key>
+		<string>rgb 28 102 255</string>
+		<key>bigCyanTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>blueTextColor</key>
+		<string>rgb 255 255 255</string>
+		<key>blackTextColor</key>
+		<string>rgb 178 178 178</string>
+		<key>cyanViewBackgroundColor</key>
+		<string>rgb 75 75 75</string>
+		<key>dividerColor</key>
+		<string>rgb 129 129 129</string>
+	</dict>
+	<key>PerformanceTables</key>
+	<dict>
+		<key>primaryLabelColor</key>
+		<string>rgb 255 255 255</string>
+		<key>secondaryLabelColor</key>
+		<string>rgb 178 178 178</string>
+	</dict>
+	<key>Tutorial</key>
+	<dict>
+		<key>textColor</key>
+		<string>rgb 255 255 255</string>
+		<key>bubbleBackgroundColor</key>
+		<string>rgb 75 75 75</string>
+	</dict>
+</dict>
+</plist>

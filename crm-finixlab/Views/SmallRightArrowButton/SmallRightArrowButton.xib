@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" interfaceStyle="light" id="iN0-l3-epB" customClass="SmallRightArrowButton" customModule="crm_finixlab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3j-xW-OBz">
+                    <rect key="frame" x="0.0" y="44" width="298" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-5R-P3R">
+                            <rect key="frame" x="277" y="19.5" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="GI2-Uz-c1M"/>
+                                <constraint firstAttribute="width" constant="15" id="LGk-HS-pT0"/>
+                            </constraints>
+                            <state key="normal">
+                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="light"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-O1-VhX">
+                            <rect key="frame" x="9" y="12.5" width="259" height="29"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11.5"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xXs-O1-VhX" firstAttribute="leading" secondItem="T3j-xW-OBz" secondAttribute="leading" constant="9" id="KeG-8Y-m52"/>
+                        <constraint firstItem="TDF-5R-P3R" firstAttribute="centerY" secondItem="T3j-xW-OBz" secondAttribute="centerY" id="Kup-94-IUE"/>
+                        <constraint firstItem="TDF-5R-P3R" firstAttribute="leading" secondItem="xXs-O1-VhX" secondAttribute="trailing" constant="9" id="cVE-gr-Joy"/>
+                        <constraint firstAttribute="trailing" secondItem="TDF-5R-P3R" secondAttribute="trailing" constant="6" id="eRz-6w-u7a"/>
+                        <constraint firstItem="xXs-O1-VhX" firstAttribute="centerY" secondItem="T3j-xW-OBz" secondAttribute="centerY" id="rPL-Yz-shc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T3j-xW-OBz" secondAttribute="bottom" id="3aZ-bg-0ad"/>
+                <constraint firstItem="T3j-xW-OBz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8UR-7C-OuV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="T3j-xW-OBz" secondAttribute="top" id="EC0-r4-97i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T3j-xW-OBz" secondAttribute="trailing" id="clv-uO-ONt"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="container" destination="T3j-xW-OBz" id="cqI-Wl-d2P"/>
+                <outlet property="labelButton" destination="xXs-O1-VhX" id="1i3-oM-4bC"/>
+                <outlet property="rightArrow" destination="TDF-5R-P3R" id="seP-Kj-iqZ"/>
+            </connections>
+            <point key="canvasLocation" x="-311.59420289855075" y="-73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
